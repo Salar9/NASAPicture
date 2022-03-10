@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NASAPicture</string>
+    <string name="rover">Rover:</string>
+    <string name="camera">Camera:</string>
+    <string name="date">Date:</string>
+    <string name="rover_photo">Rover Photo</string>
+</resources>
