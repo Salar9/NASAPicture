@@ -28,10 +28,7 @@ class MainFragment : Fragment() {
         fun newInstance() = MainFragment()
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setRetainInstance(true)
-    }
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         binding = MainFragmentBinding.inflate(inflater, container, false)
         //nasaViewModel = defaultViewModelProviderFactory.create(MainViewModel::class.java)

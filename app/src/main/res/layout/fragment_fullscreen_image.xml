@@ -13,7 +13,7 @@
             android:layout_height="match_parent"
             android:background="#B7EAEC"
             android:contentDescription="@string/fullScreenImage"
-            android:scaleType="centerInside" />
-
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"/>
     </LinearLayout>
 </layout>
