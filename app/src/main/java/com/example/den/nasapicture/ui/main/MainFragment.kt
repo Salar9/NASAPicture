@@ -22,25 +22,33 @@ class MainFragment : Fragment() {
     private val nasaViewModel: MainViewModel by lazy {
         ViewModelProvider(this).get(MainViewModel::class.java)
     }
+    //lateinit var nasaViewModel: MainViewModel
 
     companion object {
         fun newInstance() = MainFragment()
     }
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setRetainInstance(true)
+    }
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         binding = MainFragmentBinding.inflate(inflater, container, false)
+        //nasaViewModel = defaultViewModelProviderFactory.create(MainViewModel::class.java)
         return binding.root
     }
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        pagingAdapter = NASAImageAdapter()
+        pagingAdapter = NASAImageAdapter(requireActivity())
+
 
         binding.recyclerView.apply {
             layoutManager = LinearLayoutManager(requireActivity())
             adapter = pagingAdapter
         }
+
         fetchNASAImages()
 /*
         val repo = NASAReporitory.getInstance()

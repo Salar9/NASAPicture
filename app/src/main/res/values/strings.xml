@@ -4,4 +4,7 @@
     <string name="camera">Camera:</string>
     <string name="date">Date:</string>
     <string name="rover_photo">Rover Photo</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="fullScreenImage">Fullscreen image</string>
 </resources>

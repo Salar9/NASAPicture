@@ -18,7 +18,7 @@ class NASAImagePagingSource(val nasaApiService: NASAApiService): PagingSource<In
         val page = params.key ?: DEFAULT_PAGE_INDEX
 
         return try {    //тут я возвращаю скачаную страницу и номера следующей и предыдещей страницы
-            Log.i(TAG,"Page is $page")
+            Log.i(TAG,"Page is $page\tPage size is ${params.loadSize}")
             val response = nasaApiService.getNASAImages(params.loadSize, page)
             LoadResult.Page(
                 data = response.photos,    //тут мне нужно вернуть List<Photo>

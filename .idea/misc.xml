@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/Kotlin/TestProjects/NASAPicture/app/src/main/res/layout/fragment_fullscreen_image.xml" value="0.317481884057971" />
         <entry key="..\:/Android/Kotlin/TestProjects/NASAPicture/app/src/main/res/layout/main_fragment.xml" value="0.33" />
         <entry key="..\:/Android/Kotlin/TestProjects/NASAPicture/app/src/main/res/layout/nasa_image_list_item.xml" value="0.5" />
       </map>
