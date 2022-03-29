@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.den.nasapicture.R
 import com.example.den.nasapicture.databinding.FragmentFullscreenImageBinding
+import com.ortiz.touchview.TouchImageView
 import com.squareup.picasso.Picasso
 
 
@@ -23,7 +24,7 @@ class FullscreenImageFragment : Fragment() {
         url = arguments?.getString(ARG_URI) ?: ""    //извлечение параметров
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         binding = FragmentFullscreenImageBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -35,7 +36,7 @@ class FullscreenImageFragment : Fragment() {
             .load(url)
             .placeholder(R.drawable.placeholder)
             .error(R.drawable.error_404)
-            .into(binding.nasaImage)
+            .into(binding.touchImage)
     }
 
 

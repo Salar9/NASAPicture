@@ -59,4 +59,6 @@ dependencies {
     implementation "androidx.paging:paging-runtime:3.1.0"
     // Picasso
     implementation 'com.squareup.picasso:picasso:2.71828'
+    //TouchImageView
+    implementation 'com.github.MikeOrtiz:TouchImageView:3.1.1'
 }

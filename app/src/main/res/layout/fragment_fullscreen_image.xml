@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout
-        android:id="@+id/LinearLayout1"
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
+        android:background="#020202">
 
-        <ImageView
-            android:id="@+id/nasaImage"
+        <com.ortiz.touchview.TouchImageView
+            android:id="@+id/touchImage"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#B7EAEC"
-            android:contentDescription="@string/fullScreenImage"
-            android:scaleType="centerInside"
-            android:adjustViewBounds="true"/>
-    </LinearLayout>
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
